@@ -13,7 +13,7 @@
       0.5
     ); /* Fondo oscuro semi-transparente */
   }
-/*MAIN*/
+/*HOME MAIN*/
 .encabezado {
     width: 100%;
     text-align: center;
@@ -113,6 +113,27 @@
     text-align: center;
     font-size: 18px;
 }
+/*Productos*-------------------------------/
+/*MAIN*/
+.titulo-main{
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.titulo-main h5{
+  text-align: center;
+}
+.titulo-main img{
+  
+  margin:50px 0;
+  width: 80%;
+ 
+  
+}
+
   
   
  
