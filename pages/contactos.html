@@ -19,21 +19,25 @@
         .contacto {
     padding: 50px 0;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+      .contacto {
+      padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+  }
 
-.contacto-info {
-    flex: 1;
-    
-    /*text-align: center;*/
-}
+
 .contacto-info h2{
   text-align: center;
 }
-.info-container{
-  padding-left: 100px;
-}
+
 
 .contacto-info h2 {
     margin-bottom: 20px;
@@ -53,14 +57,19 @@
 }
 
 .mapa {
-    flex: 1;
+    text-align: center;
+    /* width: 70%; */
 }
+@media (max-width: 768px) {
+      .mapa iframe {
+      width: 390px;
+      height: 380px;
+      border: none;
+    }
+  }
 
-.mapa iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-}
+
+
     </style>
 
 </head>
@@ -70,7 +79,7 @@
         <!--NAVEGADOR-->
         <nav
           class="navbar navbar-expand-lg navbar-dark"
-          style="background: linear-gradient(to right, #3f2b96, #a8c0ff)"
+          style="background: linear-gradient(to right, #3f2b96, #87a6fa)"
         >
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
@@ -128,7 +137,7 @@
             </div>
             <div class="mapa">
                 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7921972678205!2d-78.48245892542887!3d-0.2073353997906181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a0938b573a9%3A0x689235c055412e79!2sLa%20Merced%2C%20170109%20Quito!5e0!3m2!1ses!2sec!4v1708738559025!5m2!1ses!2sec" width="500" height="1200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7921972678205!2d-78.48245892542887!3d-0.2073353997906181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a0938b573a9%3A0x689235c055412e79!2sLa%20Merced%2C%20170109%20Quito!5e0!3m2!1ses!2sec!4v1708738559025!5m2!1ses!2sec" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
